@@ -89,8 +89,8 @@ export default function Home() {
                            <button type="button" className="Button_button__tSJmD Button_button--medium__2at61      Button_button--primary__1TO8y ExamCourse_primary-btn__TiGNo ExamCourse_explore-cta-ff__GqCje">Explore Courses</button>
                         </div>
                         <div className="ExamCourse_exam-prepare-img__1F_tc">
-                           <div className="tw-hidden md:tw-block"><img loading="lazy" src="https://vmkt.vedantu.com/vmkt/PROD/png/92ca55f2-ef3f-4065-81af-cb6f5d46d26f-1682592753417-4102418410874681.png" alt="exam-course"/></div>
-                           <div className="tw-block md:tw-hidden"><img loading="lazy" src="https://vmkt.vedantu.com/vmkt/PROD/png/92ca55f2-ef3f-4065-81af-cb6f5d46d26f-1682592753417-4102418410874681.png" alt="exam-course"/></div>
+                           <div className="tw-hidden md:tw-block"><Image loading="lazy" src="https://vmkt.vedantu.com/vmkt/PROD/png/92ca55f2-ef3f-4065-81af-cb6f5d46d26f-1682592753417-4102418410874681.png" alt="exam-course"/></div>
+                           <div className="tw-block md:tw-hidden"><Image loading="lazy" src="https://vmkt.vedantu.com/vmkt/PROD/png/92ca55f2-ef3f-4065-81af-cb6f5d46d26f-1682592753417-4102418410874681.png" alt="exam-course"/></div>
                         </div>
                      </div>)
                      }
@@ -232,7 +232,7 @@ export default function Home() {
             <div className="gap-6 justify-between md:flex">
                 <div className="flex-1">
                     <div className="max-w-xs">
-                        <img src="https://www.floatui.com/logo.svg" className="w-32" />
+                        <Image src="https://www.floatui.com/logo.svg" className="w-32" />
                         <p className="leading-relaxed mt-2 text-[15px]">
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                         </p>
