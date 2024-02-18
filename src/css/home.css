@@ -1,0 +1,332 @@
+.styles_homepageContainer__cL6dC {
+    font-family: Poppins;
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #01202b;
+    line-height: 1.6;
+    letter-spacing: .2px;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Explore course css */
+
+.styles_homepageContainer__cL6dC *, .styles_homepageContainer__cL6dC :after, .styles_homepageContainer__cL6dC :before {
+    font-family: 'circular';
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+}
+
+.FirstFoldAILive_courses__3RxuZ h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #01202b;
+  margin-bottom: 30px;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.FirstFoldAILive_courses__3RxuZ h1 span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  color: #344e5a;
+  margin-left: 8px;
+}
+.FirstFoldAILive_coursesNew__3-vdo {
+  display: flex;
+  gap: 16px;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ExamCourse_exam-preparation-card__3WIyX {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 0 #f0f0f0;
+  border: 2px solid #eceaea;
+  border-radius: 24px;
+  position: relative;
+  flex: 1;
+}
+
+
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc {
+  width: 70%;
+  padding: 27px 0 64px 32px;
+  min-height: 322.8px;
+  z-index: 1;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc .ExamCourse_title__UA5sm {
+    font-family: 'circular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0181fd;
+  margin-bottom: 12px;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .181818px;
+  color: #01202b;
+  margin-bottom: 15px;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc .ExamCourse_exam-button-list__3deFx {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc .ExamCourse_exam-button-list__3deFx a {
+  line-height: 19px;
+  text-align: center;
+  color: #ff693d;
+  background-color: #fff;
+  border: 1px solid #eceaea;
+  border-radius: 6px;
+  padding: 7px 15px;
+  margin: 0 8px 8px 0;
+  min-width: 67px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+.Button_button--secondary__1uvV5.Button_button--small__17kTZ {
+  box-shadow: 0 1px 0 #eceaea;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_primary-btn__TiGNo {
+  border: 1px solid #ef5c32;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  min-width: 136.38px;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_explore-cta-ff__GqCje {
+  position: absolute;
+  bottom: 32px;
+  z-index: 1;
+}
+.Button_button--primary__1TO8y.Button_button--medium__2at61 {
+  box-shadow: 0 3px 0 #f35427;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-img__1F_tc {
+  width: 42%;
+}
+
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-img__1F_tc img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-img__1F_tc img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.styles_homepageContainer__cL6dC img, .styles_homepageContainer__cL6dC video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.styles_homepageContainer__cL6dC img, .styles_homepageContainer__cL6dC svg {
+  display: inline-block;
+}
+.Button_button--primary__1TO8y {
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  background: #ff693d;
+  box-shadow: 0 3px 0 #f35427;
+  border: 1px solid transparent;
+}
+.Button_button__tSJmD {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: .2px;
+  cursor: pointer;
+  transition: .3s ease;
+  min-width: 195px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+}
+@media (min-width: 990px){
+  
+.ExamCourse_exam-preparation-card__3WIyX {
+  max-width: 360px;
+}
+}
+@media (min-width: 768px){
+  
+.md\:tw-block {
+  display: block;
+}
+}
+/* Explore course css end  */
+
+
+/* States css start */
+.states_section{
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 74px;
+
+}
+.card-section, .wave-section-card {
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 25px rgb(24 24 24 / 16%);
+  border-radius: 10px;
+  background: #fff;
+  background-size: cover;
+  position: relative;
+}
+.card-section,.heading3{
+  font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.List-of-University {
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  list-style-type: none;
+  color: #505050;
+}
+.List-of-University li {
+  border: 1px solid #e0e0e0;
+  padding: 3px 10px 3px 25px;
+  margin: 3px 0px 6px 0px;
+  border-radius: 20px;
+  text-align: left;
+  /* display: inline-block; */
+}
+.List-of-University li img {
+  width: 25px;
+  margin-left: -20px;
+}
+.List-of-University li a {
+  color: #737373;
+  text-decoration: none;
+}
+.List-of-University li:hover {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0 0 rgba(50,50,50,.15)!important;
+  -moz-box-shadow: 0 0 0 0 rgba(50,50,50,.15)!important;
+  box-shadow: 0 0 0 0 rgba(50,50,50,.15)!important;
+}
+/*  States css end */
+
+
+/*  Study Material Section start  */
+.StudyMaterials_study-slider__196qW {
+  padding-top: 33px;
+}
+.StudyMaterials_study-slider__196qW h2 {
+  padding-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.4;
+    letter-spacing: normal;
+    font-weight: 600;
+}
+
+.styles_homepageContainer__cL6dC .styles_small-container__2O3eV {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+
+/*  Study Material Section End  */
+
+/*  Govt Schems section Start */
+.Govt_schems {
+  max-width: 961px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 74px;
+}
+.Govt_scholorships{
+  
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 74px;
+}
+.govt_heading h1{
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bolder;
+}
+.content_section{
+  font-size: 17px;
+  line-height: 25px;
+}
+.govt_icons:after {
+  content: "";
+  background: #0000ff;
+  width: 70px;
+  height: 48px;
+  /* opacity: 999999; */
+  /* z-index: 999999; */
+  display: block;
+  border-radius: 50%;
+  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.1;
+  top: 42px;
+  left: 39px;
+  /* background-color: rgb(256 249 339/var(--tw-bg-opacity)); */
+}
+.Govt_scholorships .govt_icons:after {
+  content: "";
+  background: #0000ff;
+  width: 70px;
+  height: 48px;
+  /* opacity: 999999; */
+  /* z-index: 999999; */
+  display: block;
+  border-radius: 50%;
+  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.1;
+  top: 40px;
+  left: 58px;
+
+  /* background-color: rgb(256 249 339/var(--tw-bg-opacity)); */
+}
+.govt_group a{
+  font-size: 15px;
+    line-height: 27px;
+}
+
+/* Govt Schems Section End */
+
+
+
+/*  Footer css start */
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: currentColor;
+}
+/*  Footer css End */
