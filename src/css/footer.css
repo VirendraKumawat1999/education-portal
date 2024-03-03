@@ -1,0 +1,7 @@
+/*  Footer css start */
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: currentColor;
+}
+/*  Footer css End */

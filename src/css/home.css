@@ -1,6 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* @import './base.css'; */
+@import 'tailwindcss/utilities';
+:root{
+  --font-family:"Poppins", sans-serif;
+  --heading-font-size:32px;
+  --heading-font-color:#01202b;
+}
+
 /* Banner start */
 .FirstFoldAILive_topBanner__1OI8e{
-  margin: 0 auto;
+    margin: 0 auto;
     max-width: 1224px;
     border-radius: 16px;
     cursor: pointer
@@ -53,7 +66,7 @@
   height: 8px;
   border-radius: 15px;
   margin-left: -2px;
-  background-color: #01202b;
+  background-color: var(--heading-font-color);
   cursor: pointer;
 }
 /* Banner End */
@@ -84,23 +97,23 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0px 70px;
+  /* padding: 0px 70px; */
   background-color: #fff;
-  max-width: 1400px;
-  justify-content: space-between;
+  max-width: 1222px;
+  justify-content: start;
 }
 .navbar-logo {
   color: #ff3f34;
   text-decoration: none;
   font-size: 25px;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
 }
 
 .navbar-links {
   list-style-type: none;
   display: flex;
-  /* margin-left: 40px; */
-  margin-right: 68px;
+  margin-left: 217px;
+  /* margin-right: 68px; */
 }
 .Header_navLink__1xm71{
     color: #000000;
@@ -111,7 +124,7 @@
     font-size: 14px;
     line-height: 0px;
     letter-spacing: .2px;
-    color: #01202b;
+    color:var(--heading-font-color);
     padding: 14px 20px;
     display: inline-flex;
     align-items: center;
@@ -123,7 +136,7 @@
     font-size: 14px;
     line-height: 28px;
     letter-spacing: .2px;
-    color: #01202b;
+    color: var(--heading-font-color);
     padding: 5px 0px;
     display: inline-flex;
     align-items: center;
@@ -198,7 +211,7 @@
 }
 
 .Header_dropdownMenu__3Wuc6 {
-  font-family: Poppins;
+  font-family: var(--font-family);
   position: absolute;
   background-color: #fff !important;
   z-index: 99;
@@ -237,17 +250,17 @@
   text-align: left;
 }
  .Header_vskCard__2IXES .Header_vskCardWrapper__2E4mt .Header_vskCardDetails__2hUSE .Header_vskheading__2HUQV {
-  font-family: Poppins;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 4px;
-  color: #01202b;
+  color: var(--heading-font-color);
 }
 .Header_vskCard__2IXES .Header_vskCardWrapper__2E4mt .Header_vskCardDetails__2hUSE .Header_vskSubHeading__34A-W {
   width: 232px;
   min-height: 16px;
-  font-family: Poppins;
+   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -300,7 +313,7 @@
   
   font-size: 13px;
   box-shadow: none;
-  color: #01202b;
+  color: var(--heading-font-color);
   background: #fff;
   border: 1px solid #eceaea;
   /* min-height: 30px; */
@@ -388,7 +401,7 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: .2px;
-    color: #01202b;
+    color: var(--heading-font-color);
     margin-top: 10px;
     margin-left: 21px;
 }
@@ -397,7 +410,7 @@
 }
 .oureInitiative_sec a{
   padding: 12px 0 10px 55px !important;
-  font-family: Poppins;
+   font-family: var(--font-family);
   display: block;
   transition: .3s ease;
   background-color: transparent;
@@ -407,7 +420,7 @@
   font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #01202b;
+    color: var(--heading-font-color);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -443,8 +456,8 @@
 }
 
 .header-inner h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 130px;
+   font-family: "Great Vibes", cursive;
+   font-size: 130px;
 }
 
 .header-inner form input[type="search"] {
@@ -470,12 +483,12 @@
 
 
 .styles_homepageContainer__cL6dC {
-    font-family: Poppins;
+     font-family: var(--font-family);
     font-size: 14px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    color: #01202b;
+    color: var(--heading-font-color);
     line-height: 1.6;
     letter-spacing: .2px;
     font-weight: 400;
@@ -547,7 +560,7 @@
 /* Explore course css */
 
 .styles_homepageContainer__cL6dC *, .styles_homepageContainer__cL6dC :after, .styles_homepageContainer__cL6dC :before {
-    font-family: 'circular';
+     font-family: var(--font-family);
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   outline: none;
@@ -555,9 +568,9 @@
 
 .FirstFoldAILive_courses__3RxuZ h1 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: var(--heading-font-size);
   line-height: 120%;
-  color: #01202b;
+  color: var(--heading-font-color);
   margin-bottom: 30px;
   max-width: 1110px;
   margin-left: auto;
@@ -596,7 +609,7 @@
   z-index: 1;
 }
 .ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc .ExamCourse_title__UA5sm {
-    font-family: 'circular';
+     font-family:var(--font-family);
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -609,7 +622,7 @@
   font-size: 18px;
   line-height: 30px;
   letter-spacing: .181818px;
-  color: #01202b;
+  color: var(--heading-font-color);
   margin-bottom: 15px;
 }
 .ExamCourse_exam-preparation-card__3WIyX .ExamCourse_exam-prepare-desc__1X_Pc .ExamCourse_exam-button-list__3deFx {
@@ -730,12 +743,12 @@
 }
 .card-section,.heading3{
   font-size: 18px;
-    color: #333;
+    color: var(--heading-font-color);
     text-align: center;
     margin-bottom: 20px;
 }
 .List-of-University {
-  font-family: Roboto,sans-serif;
+   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 500;
   list-style-type: none;
@@ -772,8 +785,9 @@
 }
 .StudyMaterials_study-slider__196qW h2 {
   padding-bottom: 32px;
-  font-size: 24px;
+  font-size: var(--heading-font-size);
   line-height: 1.4;
+  color: var(--heading-font-color);
     letter-spacing: normal;
     font-weight: 600;
 }
@@ -807,8 +821,9 @@
 }
 .govt_heading h1{
   text-align: center;
-  font-size: 30px;
+  font-size: var(--heading-font-size);
   line-height: 36px;
+  color: var(--heading-font-color);
   font-weight: bolder;
 }
 .content_section{
@@ -817,22 +832,22 @@
 }
 .govt_icons:after {
   content: "";
-  background: #0000ff;
-  width: 70px;
-  height: 48px;
+  background: var(--heading-font-color);
+  width: 70px!important;
+  height: 48px !important;
   /* opacity: 999999; */
   /* z-index: 999999; */
   display: block;
   border-radius: 50%;
   transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 0.1;
-  top: 42px;
-  left: 39px;
+  top: 42px !important;
+  left: 39px !important;
   /* background-color: rgb(256 249 339/var(--tw-bg-opacity)); */
 }
 .Govt_scholorships .govt_icons:after {
   content: "";
-  background: #0000ff;
+  background: var(--heading-font-color);
   width: 70px;
   height: 48px;
   /* opacity: 999999; */
@@ -841,8 +856,8 @@
   border-radius: 50%;
   transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 0.1;
-  top: 40px;
-  left: 58px;
+  top: 40px !important;
+  left: 36px !important;
 
   /* background-color: rgb(256 249 339/var(--tw-bg-opacity)); */
 }
@@ -855,13 +870,7 @@
 
 
 
-/*  Footer css start */
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-    fill: currentColor;
-}
-/*  Footer css End */
+
 
 
 
@@ -907,12 +916,12 @@
 }
 
 .StudyMaterialCard_card__1JDBu .StudyMaterialCard_card-title__-Ke-f {
-  font-family: sans-serif;
+   font-family: var(--font-family); 
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 26px;
-  color: #01202b;
+  color: var(--heading-font-color);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -928,12 +937,12 @@
 }
 
 .StudyMaterialCard_card__1JDBu .StudyMaterialCard_card-subtitle__SJHOj {
-  font-family: sans-serif;
+   font-family: var(--font-family); 
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #01202b
+  color: var(--heading-font-color)
 }
 
 @media(max-width: 768px) {
@@ -965,10 +974,7 @@
   }
 }
 
-.StudyMaterials_study-slider__196qW h2 {
-  padding-bottom: 32px;
-  font-size: 24px
-}
+
 
 @media(max-width: 768px) {
   .StudyMaterials_study-slider__196qW h2 {
@@ -1021,26 +1027,7 @@
     background-size: cover;
     background-image:url(../assets/images/Study_material/ncert-solutions.webp)
 }
-.StudyMaterialCard_card__1JDBu2{
-  background-size: cover;
-    background-image:url(../assets/images/Study_material/important-question-papers.webp)
-}
-.StudyMaterialCard_card__1JDBu3{
-  background-size: cover;
-    background-image:url(../assets/images/Study_material/ncert-books.webp)
-}
-.StudyMaterialCard_card__1JDBu4{
-  background-size: cover;
-    background-image:url(../assets/images/Study_material/previous-year-question-papers.webp)
-}
-.StudyMaterialCard_card__1JDBu5{
-  background-size: cover;
-    background-image:url(../assets/images/Study_material/revision-notes.webp)
-}
-.StudyMaterialCard_card__1JDBu6{
-  background-size: cover;
-    background-image:url(../assets/images/Study_material/sample-question-papers.webp)
-}
+
 .StudyMaterials_study-slider__196qW .slick-dots {
   display: none
 }
@@ -1078,7 +1065,7 @@
     min-width: 80px;
 }
 .Button-normal-active{
-  background-color: #01202b;
+  background-color: var(--heading-font-color);
     color: #fff;
 }
 
@@ -1137,23 +1124,27 @@
   width: fit-content;
 }
 .imagesscrollbar{
-  background-color: rgb(232, 223, 255);
-  box-shadow: rgb(208, 196, 240) 0px 3px 0px;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   max-width: 164px;
-  cursor: pointer;
+  /* cursor: pointer; */
+  flex: none;
+  font-size: 14px;
   width: 100%;
-  color: #01202b;
+  color: var(--heading-font-color);
   font-weight: 500;
+}
+.imagesscrollbar img{
+  width: 33px;
+  color: transparent;
 }
 .PopularCoursesCard_arrowIcon__1nuOu {
   transform: rotate(-90deg);
-  display: inline-block;
-    position: relative;
-    left: 50px;
-    top: -6px;
+  margin-right: 10px;
+}
+.imagesscrollbar .contentdiv {
+  justify-content: space-between;
 }
 .styles_homepageContainer__cL6dC svg {
   display: inline-block;

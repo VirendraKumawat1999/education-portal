@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
 import "../css/home.css"
+import "../css/dashboard.css"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,7 +18,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      </head>
+      <body className={inter.className}>{children}
+      
+      
+      {/* <!-- Site Script File --> */}
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	{/* <!-- Flowbite Js --> */}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+	{/* <!-- Apex Chart JS --> */}
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	{/* <!-- Custome JS --> */}
+	<script src="assets/js/chart.js"></script>
+	<script src="assets/js/script.js"></script>
+      </body>
+
     </html>
   );
 }
