@@ -14,6 +14,7 @@ const Dashboard=()=>{
 	const pathName =usePathname();
     return (
 		<>
+		
 			<div className="w-full h-auto lg:h-screen bg-sitebg">
 				<div className="antialiased">
 					{/* <!-- Navbar --> */}
