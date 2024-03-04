@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 
 
-const govtSchemsComponent = () => {
+const GovtSchemsComponent = () => {
 
     const [openTab, setOpenTab] = React.useState(1);
     const categoryTabs = [
@@ -117,4 +117,4 @@ const govtSchemsComponent = () => {
     );
 };
 
-export default govtSchemsComponent;
+export default GovtSchemsComponent;

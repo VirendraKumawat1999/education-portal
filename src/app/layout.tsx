@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "../css/home.css"
@@ -21,22 +22,22 @@ export default function RootLayout({
       <head>
       <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </head>
       <body className={inter.className}>{children}
       
       
       {/* <!-- Site Script File --> */}
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"/>
+	<Script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"/>
 	{/* <!-- Flowbite Js --> */}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+	<Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"/>
 	{/* <!-- Apex Chart JS --> */}
-	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<Script src="https://cdn.jsdelivr.net/npm/apexcharts"/>
 	{/* <!-- Custome JS --> */}
-	<script src="assets/js/chart.js"></script>
-	<script src="assets/js/script.js"></script>
+	<Script src="assets/js/chart.js"/>
+	<Script src="assets/js/script.js"/>
       </body>
 
     </html>

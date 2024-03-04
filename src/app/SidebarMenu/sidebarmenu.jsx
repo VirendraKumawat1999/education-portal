@@ -72,7 +72,7 @@ const SidebarMenu =() =>{
 							</ul>
 						</div>
 						{/* bottom sidebar icons */}
-						<div class="bottom-siderbar-icons hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white z-20">
+						{/* <div class="bottom-siderbar-icons hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white z-20">
 							<a href="setting.html" data-tooltip-target="tooltip-settings" class="inline-flex w-9 h-9 justify-center items-center ">
 								<i class="fa fa-solid fa fa-gear text-md"></i>
 							</a>
@@ -94,7 +94,7 @@ const SidebarMenu =() =>{
 								Support
 								<div class="tooltip-arrow" data-popper-arrow></div>
 							</div>
-						</div>
+						</div> */}
 					</aside>
         </>
     );

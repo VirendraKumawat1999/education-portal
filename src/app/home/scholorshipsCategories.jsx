@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const scholorshipsComponent = () =>{
+const ScholorshipsComponent = () =>{
 
     const [openTab, setOpenTab] = React.useState(1);
     const categoryTabs = [
@@ -97,4 +97,4 @@ const scholorshipsComponent = () =>{
     );
 }
 
-export default scholorshipsComponent;
+export default ScholorshipsComponent;
