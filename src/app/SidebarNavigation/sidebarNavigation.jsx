@@ -83,7 +83,7 @@ const SidebarNavigation = () =>{
                                     </div>
                                     <div className="pl-3 w-full">
                                         <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
-                                            New message from <span className="font-semibold text-gray">Lorem Ipsum</span>: Lorem Ipsum has been the industry's standard dummy.
+                                            New message from <span className="font-semibold text-gray">Lorem Ipsum</span>Lorem Ipsum has been the industrys standard dummy
                                         </div>
                                         <div className="text-xs font-medium text-primary">a few moments ago</div>
                                     </div>
