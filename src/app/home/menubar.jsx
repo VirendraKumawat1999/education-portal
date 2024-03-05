@@ -7,7 +7,7 @@ const MenuBar = () =>{
             <div className='header_sec'>
                         <nav className="navbar">
                             <a href="#" className="navbar-logo">
-                                <Image src={require('../../assets/images/Logo/vedantu-logo.svg')} />
+                                <h1>LOGO</h1>
                             </a>
                             <ul className="navbar-links">
                                 <li className="navbar-dropdown">
