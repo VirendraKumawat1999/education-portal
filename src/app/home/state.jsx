@@ -1,8 +1,58 @@
 import React from "react";
 import Image from 'next/image'
 const StateComponent = () =>{
+    const states = [
+        { name: "Andaman & Nicobar Islands", value: "AN" },
+        { name: "Andhra Pradesh (Old)", value: "AP_OLD" },
+        { name: "Arunachal Pradesh", value: "AR" },
+        { name: "Assam", value: "AS" },
+        { name: "Bihar", value: "BR" },
+        { name: "Chandigarh", value: "CH" },
+        { name: "Chhattisgarh", value: "CG" },
+        { name: "Dadra & Nagar Haveli", value: "DN" },
+        { name: "Daman & Diu", value: "DD" },
+        
+      ];
 
-    return (
+      const states2 = [
+        { name: "Delhi", value: "DL" },
+        { name: "Goa", value: "GA" },
+        { name: "Gujarat", value: "GJ" },
+        { name: "Haryana", value: "HR" },
+        { name: "Himachal Pradesh", value: "HP" },
+        { name: "Jammu & Kashmir", value: "JK" },
+        { name: "Jharkhand", value: "JH" },
+        { name: "Karnataka", value: "KA" },
+        { name: "Kerala", value: "KL" },
+       
+      ];
+      const state3=[
+        { name: "Lakshadweep", value: "LD" },
+        { name: "Madhya Pradesh", value: "MP" },
+        { name: "Maharashtra", value: "MH" },
+        { name: "Manipur", value: "MN" },
+        { name: "Meghalaya", value: "ML" },
+        { name: "Mizoram", value: "MZ" },
+        { name: "Nagaland", value: "NL" },
+        { name: "Odisha", value: "OD" },
+        { name: "Puducherry", value: "PY" },
+        
+      ];
+        const states4=[
+            { name: "Punjab", value: "PB" },
+        { name: "Rajasthan", value: "RJ" },
+        { name: "Sikkim", value: "SK" },
+        { name: "Tamil Nadu", value: "TN" },
+        { name: "Tripura", value: "TR" },
+        { name: "Uttar Pradesh", value: "UP" },
+        { name: "Uttarakhand", value: "UT" },
+        { name: "West Bengal", value: "WB" },
+        { name: "Telangana", value: "TG" },
+        // { name: "Andhra Pradesh", value: "AP" },
+        // { name: "Ladakh", value: "LA" }
+   
+        ];
+      return (
         <>
 
 <section className='states_section'>
@@ -16,48 +66,58 @@ const StateComponent = () =>{
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {/* <h5 style={{  color: '#737373',fontSize:'14px',paddingBottom:'15px;'}}><span>10th , Inter, Diploma</span></h5> */}
             <ul className="List-of-University">
-                <li>
-                    <Image src={require('../../assets/images/states/AU-L.png')} />
-                    <a href="../Andhra-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/11"> Andhra University</a>
-                </li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Nagarjuna-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/15"> Acharya Nagarjuna University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Adikavi-Nannaya-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1296"> Adikavi Nannaya University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-University-Srikakulam-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1017"> Dr B R Ambedkar University Srikakulam</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-Open-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/13"> Dr B R Ambedkar Open University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Hyderabad-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/42"> Hyderabad University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Anantapur-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/104"> JNTU-Anantapur</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Hyderabad-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/10"> JNTU-Hyderabad</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> JNTU-Kakinada</a></li>
+               
+                 {states.map((state, index) => (
+                        <li key={index}>
+
+                        <Image src={require('../../assets/images/states/AU-L.png')} alt=""/>
+                            <a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> {state.name}</a>
+                        </li>
+                 ))}       
+                
+                        
             </ul>
 
         </div>
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={{ margin: '0 65px' }}>
             {/* <h5 style={{  color: '#737373',fontSize:'14px',paddingBottom:'15px;'}}><span>10th , Inter, Diploma</span></h5> */}
             <ul className="List-of-University">
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Andhra-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/11"> Andhra University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Nagarjuna-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/15"> Acharya Nagarjuna University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Adikavi-Nannaya-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1296"> Adikavi Nannaya University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-University-Srikakulam-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1017"> Dr B R Ambedkar University Srikakulam</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-Open-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/13"> Dr B R Ambedkar Open University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Hyderabad-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/42"> Hyderabad University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Anantapur-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/104"> JNTU-Anantapur</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Hyderabad-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/10"> JNTU-Hyderabad</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> JNTU-Kakinada</a></li>
+            {states2.map((state, index) => (
+                        <li key={index}>
+
+                        <Image src={require('../../assets/images/states/AU-L.png')} alt=""/>
+                            <a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> {state.name}</a>
+                        </li>
+                 ))}   
+               
+            </ul>
+
+        </div>
+        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={{ marginRight: '60px' }}>
+            {/* <h5 style={{  color: '#737373',fontSize:'14px',paddingBottom:'15px;'}}><span>10th , Inter, Diploma</span></h5> */}
+            <ul className="List-of-University">
+            {state3.map((state, index) => (
+                        <li key={index}>
+
+                        <Image src={require('../../assets/images/states/AU-L.png')} alt=""/>
+                            <a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> {state.name}</a>
+                        </li>
+                 ))}   
+                
             </ul>
 
         </div>
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {/* <h5 style={{  color: '#737373',fontSize:'14px',paddingBottom:'15px;'}}><span>10th , Inter, Diploma</span></h5> */}
             <ul className="List-of-University">
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Andhra-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/11"> Andhra University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Nagarjuna-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/15"> Acharya Nagarjuna University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Adikavi-Nannaya-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1296"> Adikavi Nannaya University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-University-Srikakulam-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/1017"> Dr B R Ambedkar University Srikakulam</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Dr-B-R-Ambedkar-Open-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/13"> Dr B R Ambedkar Open University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../Hyderabad-University-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/42"> Hyderabad University</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Anantapur-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/104"> JNTU-Anantapur</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Hyderabad-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/10"> JNTU-Hyderabad</a></li>
-                <li><Image src={require('../../assets/images/states/AU-L.png')} /><a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> JNTU-Kakinada</a></li>
+            {states4.map((state, index) => (
+                        <li key={index}>
+
+                        <Image src={require('../../assets/images/states/AU-L.png')} alt=""/>
+                            <a href="../JNTU-Kakinada-Complete-Information-Results-Notifications-Exam-Schedule-QuestionPapers/86"> {state.name}</a>
+                        </li>
+                 ))}   
+                
             </ul>
 
         </div>
@@ -69,5 +129,7 @@ const StateComponent = () =>{
     );
 
 }
+
+
 
 export default StateComponent;

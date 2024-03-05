@@ -35,25 +35,25 @@ const Footercomponent = () => {
                     <div className="flex-1">
                         <div className="max-w-xs">
                             {/* <Image  className="w-32" src={footerlogo} style={{width:'100px',height:'100px'}}/> */}
-                            <p className="leading-relaxed mt-2 text-[15px]">
+                            {/* <p className="leading-relaxed mt-2 text-[15px]">
                                 Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
-                            </p>
+                            </p> */}
                         </div>
                         <form >
-                            <label className="block pt-4 pb-2">
+                            {/* <label className="block pt-4 pb-2">
                                 Stay up to date
-                            </label>
+                            </label> */}
                             <div className="max-w-sm flex items-center border rounded-md p-1">
-                                <input
+                                {/* <input
                                     type="email"
                                     placeholder="Enter your email"
                                     className="w-full p-2.5 outline-none"
-                                />
-                                <button
+                                /> */}
+                                {/* <button
                                     className="p-2.5 rounded-md text-white bg-indigo-600 outline-none shadow-md focus:shadow-none sm:px-5"
                                 >
                                     Subscribe
-                                </button>
+                                </button> */}
                             </div>
                         </form>
                     </div>

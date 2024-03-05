@@ -2,20 +2,32 @@ import React from "react";
 import Image from 'next/image'
 const ExploreCourseComponent = () => {
 
+    const Exams = [
+        {
+            name:" Board Exams",
+        },
+        {
+            name:"Competitive Exams",
+        },
+        {
+            name:"Govt Exams",
+        },
+    ]
+
     return (
 <>
 
 
         <section className="Explore_courses">
             <div className="FirstFoldAILive_courses__3RxuZ" >
-                <h1>Exam</h1>
+                <h1>Exams</h1>
                 <div className="FirstFoldAILive_coursesNew__3-vdo">
                     {
-                        [1, 2, 3].map((items) =>
-                            <div className="ExamCourse_exam-preparation-card__3WIyX md:tw-flex" key={items}>
+                        Exams.map((items , idx) =>
+                            <div className="ExamCourse_exam-preparation-card__3WIyX md:tw-flex" key={idx}>
                                 <div className="ExamCourse_exam-prepare-desc__1X_Pc">
                                     <p className="ExamCourse_title__UA5sm">class 3 - 13 </p>
-                                    <h3 className="">Competitive Exams</h3>
+                                    <h3 className="">{items.name}</h3>
                                     <div className="ExamCourse_exam-button-list__3deFx"><a href="#!" className="Button_button__tSJmD Button_button--small__17kTZ    Button_button--no-transition__176Hp  Button_button--secondary__1uvV5 false">JEE</a><a href="#!" className="Button_button__tSJmD Button_button--small__17kTZ    Button_button--no-transition__176Hp  Button_button--secondary__1uvV5 false">NEET</a><a href="#!" className="Button_button__tSJmD Button_button--small__17kTZ    Button_button--no-transition__176Hp  Button_button--secondary__1uvV5 false">JEE/NEET Foundation</a><a href="#!" className="Button_button__tSJmD Button_button--small__17kTZ    Button_button--no-transition__176Hp  Button_button--secondary__1uvV5 false">EAMCET</a><a href="#!" className="Button_button__tSJmD Button_button--small__17kTZ    Button_button--no-transition__176Hp  Button_button--secondary__1uvV5 false">Olympiad</a></div>
                                     <button type="button" className="Button_button__tSJmD Button_button--medium__2at61      Button_button--primary__1TO8y ExamCourse_primary-btn__TiGNo ExamCourse_explore-cta-ff__GqCje">Explore Courses</button>
                                 </div>

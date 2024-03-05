@@ -100,7 +100,7 @@
   /* padding: 0px 70px; */
   background-color: #fff;
   max-width: 1222px;
-  justify-content: start;
+  justify-content: space-between
 }
 .navbar-logo {
   color: #ff3f34;

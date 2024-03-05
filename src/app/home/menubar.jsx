@@ -21,7 +21,7 @@ const MenuBar = () =>{
 
                                         </div>
                                     </a>
-                                    <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0" style={{ display: 'flex', left: '-195px', paddingTop: '0px' }}>
+                                    {/* <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0" style={{ display: 'flex', left: '-195px', paddingTop: '0px' }}>
                                         <div className='dropdown-left'>
                                             <div className='tryscrollbar'>
                                                 {
@@ -31,7 +31,7 @@ const MenuBar = () =>{
                                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                                 <div className="Header_vskCardDetails__2hUSE">
                                                                     <div className="Header_vskheading__2HUQV">
-                                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a></div>
+                                                                        <a onclick="return false;" href="#">English Superstar</a></div>
                                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                                 </div>
                                                             </div>
@@ -53,31 +53,31 @@ const MenuBar = () =>{
                                                     </div>
                                                     <div className="dropdown-content Header_dropdownContent__3FGsy oureInitiative_sec " style={{ marginLeft: '23px', paddingBottom: '1px' }}>
 
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Repeater</h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 12 <span class="subjectname">Science PCM</span></h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 11 <span class="subjectname">Science PCM</span></h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 10 </h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 9 </h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 8 </h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 7 </h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 6 </h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>class 6 </h4>
                                                         </a>
 
@@ -96,7 +96,7 @@ const MenuBar = () =>{
                                                     </div>
                                                     <div className="dropdown-content Header_dropdownContent__3FGsy oureInitiative_sec schoolTuition_secontion" style={{ marginLeft: '23px', paddingBottom: '1px' }}>
 
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW " style={{ position: 'relative' }}>
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW " style={{ position: 'relative' }}>
                                                             <h4>School tuition
 
                                                             </h4>
@@ -111,7 +111,7 @@ const MenuBar = () =>{
 
                                                         </a>
                                                         <div className='dropdown-right dropdown-left displaypropetry' style={{ backgroundColor: '#fff', width: '100%', minWidth: '300px', position: 'absolute', left: '912px', top: '0', paddingTop: '0px' }}>
-                                                            {/* <div className='tryscrollbar'> */}
+                                                           
                                                             <div className='firstsubdropdown_main_div'>
                                                                 <div className='tryscrollbar' style={{ minHeight: '390px' }}>
 
@@ -156,14 +156,14 @@ const MenuBar = () =>{
 
                                                                 </div>
                                                             </div>
-                                                            {/* </div> */}
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                    </div>
+                                    </div> */}
                                 </li>
                                 <li className="navbar-dropdown">
                                     <a href="#">
@@ -173,13 +173,13 @@ const MenuBar = () =>{
                                                 ></path></svg>
                                         </div>
                                     </a>
-                                    <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0">
+                                    {/* <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0">
                                         <div className="Header_vskCard__2IXES">
                                             <div className="Header_vskCardWrapper__2E4mt">
                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                 <div className="Header_vskCardDetails__2hUSE">
                                                     <div className="Header_vskheading__2HUQV">
-                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a> <br /><span>Age 4 - 8</span></div>
+                                                        <a onclick="return false;" href="#">English Superstar</a> <br /><span>Age 4 - 8</span></div>
                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                 </div>
                                             </div>
@@ -189,7 +189,7 @@ const MenuBar = () =>{
                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                 <div className="Header_vskCardDetails__2hUSE">
                                                     <div className="Header_vskheading__2HUQV">
-                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a> <br /><span>Age 4 - 8</span></div>
+                                                        <a onclick="return false;" href="#">English Superstar</a> <br /><span>Age 4 - 8</span></div>
                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                 </div>
                                             </div>
@@ -199,7 +199,7 @@ const MenuBar = () =>{
                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                 <div className="Header_vskCardDetails__2hUSE">
                                                     <div className="Header_vskheading__2HUQV">
-                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a> <br /><span>Age 4 - 8</span></div>
+                                                        <a onclick="return false;" href="#">English Superstar</a> <br /><span>Age 4 - 8</span></div>
                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                 </div>
                                             </div>
@@ -209,13 +209,13 @@ const MenuBar = () =>{
                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                 <div className="Header_vskCardDetails__2hUSE">
                                                     <div className="Header_vskheading__2HUQV">
-                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a> <br /><span>Age 4 - 8</span></div>
+                                                        <a onclick="return false;" href="#">English Superstar</a> <br /><span>Age 4 - 8</span></div>
                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                    </div>
+                                    </div> */}
                                 </li>
                                 <li className="navbar-dropdown">
                                     <a href="#">
@@ -225,8 +225,8 @@ const MenuBar = () =>{
                                                 ></path></svg>
                                         </div>
                                     </a>
-                                    <div className="dropdown new ">
-                                        {/* Main dropdwon */}
+                                    {/* <div className="dropdown new ">
+                                      
                                         {
                                             [1, 2, 3, 4, 5, 6].map((maindropdown) =>
                                                 <a href="#" className='SUb_dropdown subDrop1' id="subDrop" key={maindropdown}>NCERT Solutions
@@ -236,7 +236,7 @@ const MenuBar = () =>{
 
                                                     <div className="sub_sub_dropdown testing_dropdown" id="InsidesubDrop">
                                                         {/* inside sub dropdown */}
-                                                        {[1, 2, 3, 4, 5].map((dropdown) =>
+                                                        {/* {[1, 2, 3, 4, 5].map((dropdown) =>
                                                             <a href="#" className='insideSUb_dropdown insidedropdownmenu'
                                                                 style={{ paddingBottom: '10px' }} key={dropdown}>NCERT Solutions for Class 12
 
@@ -263,7 +263,7 @@ const MenuBar = () =>{
                                         }
 
 
-                                    </div>
+                                    </div> */} 
                                 </li>
                                 <li className="navbar-dropdown">
                                     <a href="#">
@@ -281,7 +281,7 @@ const MenuBar = () =>{
                                                 ></path></svg>
                                         </div>
                                     </a>
-                                    <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0" style={{ display: 'flex', left: '-200px', paddingTop: '0px' }}>
+                                    {/* <div className=" dropdown dropdown-menu Header_dropdownMenu__3Wuc6 Header_singleDropdownCol__8O4B0" style={{ display: 'flex', left: '-200px', paddingTop: '0px' }}>
                                         <div className='dropdown-left'>
                                             <div className='tryscrollbar'>
                                                 {
@@ -291,7 +291,7 @@ const MenuBar = () =>{
                                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                                 <div className="Header_vskCardDetails__2hUSE">
                                                                     <div className="Header_vskheading__2HUQV">
-                                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a></div>
+                                                                        <a onclick="return false;" href="#">English Superstar</a></div>
                                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                                 </div>
                                                             </div>
@@ -307,23 +307,23 @@ const MenuBar = () =>{
                                                     </div>
                                                     <div className="dropdown-content Header_dropdownContent__3FGsy oureInitiative_sec">
 
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Vedantu Scholarship Admission Test (VSAT)</h4>
                                                             <p>Give an online test to get up to 100% scholarship on Vedantu courses</p>
                                                         </a>
-                                                        <a href="https://olympiad.vedantu.com/?itm_source=volt_home_more" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Vedantu Olympiad Litmus Test (VOLT)</h4>
                                                             <p>Online test to get a chance to prepare free for the international olympiad</p>
                                                         </a>
-                                                        <a href="https://www.vedantu.com/eklavya/jee" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Eklavya JEE</h4>
                                                             <p>Get free online coaching from top teachers to crack JEE Advanced exam</p>
                                                         </a>
-                                                        <a href="https://www.vedantu.com/eklavya/neet" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Eklavya NEET</h4>
                                                             <p>Get free online coaching from top teachers for NEET exam preparation</p>
                                                         </a>
-                                                        <a href="https://www.vedantu.com/revise-india" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Revise India</h4>
                                                             <p>Free revision camp for Class 10 CBSE students with LIVE doubt solving</p>
                                                         </a>
@@ -343,16 +343,16 @@ const MenuBar = () =>{
                                                     </div>
                                                     <div className="dropdown-content Header_dropdownContent__3FGsy oureInitiative_sec " style={{ marginLeft: '23px', paddingBottom: '1px' }}>
 
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Testimonials</h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>FAQs</h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>Blogs</h4>
                                                         </a>
-                                                        <a href="https://vsat.vedantu.com/" target="_blank" className="Header_singleDropdownContent__CyisW">
+                                                        <a href="#" target="_blank" className="Header_singleDropdownContent__CyisW">
                                                             <h4>News</h4>
                                                         </a>
                                                     </div>
@@ -367,7 +367,7 @@ const MenuBar = () =>{
                                                                 <Image src={require('../../assets/images/courses-Icons/Screenshot 2024-02-19 190416.png')} style={{ width: '42px' }} />
                                                                 <div className="Header_vskCardDetails__2hUSE">
                                                                     <div className="Header_vskheading__2HUQV">
-                                                                        <a onclick="return false;" href="https://www.vedantu.com/english-superstar?&amp;itm_source=new_nav_menu&amp;itm_medium=new_nav_menu&amp;itm_campaign=new_nav_menu">English Superstar</a></div>
+                                                                        <a onclick="return false;" href="#">English Superstar</a></div>
                                                                     <div className="Header_vskSubHeading__34A-W">Level based holistic English program</div>
                                                                 </div>
                                                             </div>
@@ -377,7 +377,7 @@ const MenuBar = () =>{
 
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </li>
                             </ul>
                             {/* <div className="Header_call_section">

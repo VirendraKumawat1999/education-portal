@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import StateComponent from './state'
 
 const ScholorshipsComponent = () =>{
 
@@ -45,10 +46,10 @@ const ScholorshipsComponent = () =>{
                         <div className="styles_tab-controls__3oB0e tw-flex">
                             <button type="button" className={"Button-normal " + (openTab === 1 ? "Button-normal-active" : "Button-normal")}
                                 onClick={e => { e.preventDefault(); setOpenTab(1); }} data-toggle="tab" href="#link1" role="tablist">
-                                category</button>
+                                Category</button>
                             <button type="button" className={"Button-normal " + (openTab === 2 ? "Button-normal-active" : "Button-normal")}
                                 onClick={e => { e.preventDefault(); setOpenTab(2); }} data-toggle="tab" href="#link2" role="tablist">
-                                states</button>
+                                States</button>
                         </div>
                     </div>
                     <div className='govt_heading'>
@@ -75,7 +76,7 @@ const ScholorshipsComponent = () =>{
                         </div>
                     </div>
                     <div className={"Govt_section_data " + (openTab === 2 ? "block" : "hidden")} id="link2">
-                        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-5 md:gap-x-10 gap-y-6 '>
+                        {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-5 md:gap-x-10 gap-y-6 '>
 
                             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((itemsdata) =>
 
@@ -88,7 +89,15 @@ const ScholorshipsComponent = () =>{
                                 </div>
                             )}
 
-                        </div>
+                        </div> */}
+                        <StateComponent />
+                        <div className="viewallButton">
+                        <a class="mt-6 text-center justify-center flex  normal-case " >
+                            <button aria-label="View All" class=" flex items-center px-4 py-2 text-sm  rounded-md    border border-solid !bg-transparent text-secondary hover:text-primary border-primary hover:border-primary  green   transition ease-in-out font-medium leading-none  
+                        " title="" style={{ borderColor: '#ff693d', color: '#ff693d' }}>View All<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="ml-2 inline-block   w-6 h-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style={{ color: '#ff693d' }}>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </button></a>
+                    </div>
                     </div>
 
                 </section>
