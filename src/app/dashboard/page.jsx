@@ -4,7 +4,15 @@ import React from "react";
 import SidebarMenu from '../SidebarMenu/sidebarmenu'
 import { usePathname} from "next/navigation";
 import "../../css/sidebar.scss"
-const Dashboard=({ children })=>{
+
+
+// Define the type for the props
+
+interface DashboardProps {
+    children: React.ReactNode; // Specify the type for children prop
+}
+
+const Dashboard: React.FC<DashboardProps> = ({children}) => {
 	const PathName=usePathname();
 
     return (
