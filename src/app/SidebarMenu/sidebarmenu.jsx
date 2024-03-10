@@ -1,78 +1,256 @@
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-
-const SidebarMenu =() =>{
-
-    // const router = useRouter();
-	const pathName =usePathname();
-	console.log(pathName,"pathName")
-    return (
-        <>
-                   <aside className="dashboard scrollbar fixed top-0 left-0 z-40 w-72 lg:w-56 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 lg:translate-x-0" aria-label="Sidenav" id="drawer-navigation">
-						<div className="dashboard-sidebar overflow-y-auto py-5 px-3 h-full bg-white">
+import React, { useState, useEffect,useRef } from 'react';
+// import "../../css/dashboard.sccs"
+const SidebarMenu = ({ isVisible }) => {
 
 
-							{/* <!-- Menu (It's for Lablet and Desktop) --> */}
-							<ul className="hidden lg:inline ">
-								<li  className={pathName.startsWith("/"+'dashboard') ? "active" : "deactive"}>
-								<Link href="/dashboard"  className='flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75'>
+	const Dashboardmenu = [
+		{
+			id: 1,
+			name: 'Settings',
+			icon: '',
+			dropdownmenu: [
+				{
+					name: 'Home page settings',
+					icons: '',
+					url: '/settings/homepagesettings',
+				},
+				{
+					name: 'General settings',
+					icons: '',
+					url: '/settings/generalsettings',
+				}
+			],
+		},
+		{
+			id: 2,
+			name: 'Categories',
+			icon: '',
+			dropdownmenu: [
+				{
+					name: 'Jobs',
+					icons: '',
+					url: '/categories/jobs',
+				},
+				{
+					name: 'Study materials',
+					icons: '',
+					url: '/categories/studymaterials',
+				},
+				{
+					name: 'Previous years question papers',
+					icons: '',
+					url: '/categories/previousyearsquestionpaper',
+				},
+				{
+					name: 'Exams',
+					icons: '',
+					url: '/categories/exams',
+				},
+				{
+					name: 'Exam Results',
+					icons: '',
+					url: '/categories/examresults',
+				},
+				{
+					name: 'Scholarships',
+					icons: '',
+					url: '/categories/scholarships',
+				},
+				{
+					name: 'Govt Schemes',
+					icons: '',
+					url: '/categories/govtschems',
+				},
+				{
+					name: 'Question papers',
+					icons: '',
+					url: '/categories/questionpapers',
 
-										<i className="fa fa-sliders text-lg text-acent1  transition duration-75" aria-hidden="true"></i>
-										<span className="ml-3" style={{ marginLeft: '19px' }}>Home Slider</span>
-									</Link>
-								</li>
-								<li  className={pathName.startsWith("/"+'popularcourses') ? "active" : "deactive"}>
-								
-									<Link href="/popularcourses" className="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1">
+				},
+				{
+					name: 'E books',
+					icons: '',
+					url: '/categories/ebooks',
 
-										<i className="fa fa-graduation-cap text-lg text-acent1  transition duration-75" aria-hidden="true"></i>
-										<span className="flex-1 ml-3 text-left whitespace-nowrap">Popular Courses</span>
-									</Link>
-								
-								</li>
-								<li>
-									<a href="student.html" className="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1">
-										<i className="fa fa-solid fa fa-graduation-cap text-lg text-acent1 transition duration-75 "></i>
-										<span className="flex-1 ml-3 text-left whitespace-nowrap">Explore courses</span>
-									</a>
-								</li>
-								<li>
-									<a href="attendance.html" type="button" className="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1">
-										<i className="fa fa-globe text-lg text-acent1 transition duration-75 "></i>
-										<span className="flex-1 ml-3 text-left whitespace-nowrap" style={{ marginLeft: '19px' }}>States</span>
-									</a>
-								</li>
+				},
+				{
+					name: 'Notifications',
+					icons: '',
+					url: '/categories/notifications',
 
-								<li>
-									<a href="exam.html" className="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1">
-										<i className="fa fa-graduation-cap text-lg text-acent1 transition duration-75 "></i>
-										<span className="flex-1 ml-3 text-left whitespace-nowrap">Study Materials</span>
-									</a>
-								</li>
-								<li>
-									<a href="subject.html" className="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
-										<i className="fa fa-graduation-cap text-lg text-acent1 transition duration-75 "></i>
-										<span className="ml-3">Find schemes</span>
-									</a>
-								</li>
-								<li>
-									<a href="result.html" className="flex items-center p-2 w-full text-base font-medium text-primary rounded-lg transition duration-75 group hover:bg-acent1">
-										<i className="fa fa-graduation-cap text-lg text-acent1 transition duration-75 "></i>
-										<span className="flex-1 ml-3 text-left whitespace-nowrap">Find scholorships </span>
-									</a>
-								</li>
+				}
+			],
+		},
+		{
+			id: 3,
+			name: 'Articles',
+			icon: '',
+			dropdownmenu: [
+				{
+					name: 'ALL',
+					icons: '',
+					url: '/articles/all',
 
-								<li>
-									<a href="setting.html" className="flex items-center p-2 text-base font-medium text-primary rounded-lg hover:bg-acent1 group transition duration-75">
-										<i className="fa fa-sliders text-lg text-acent1 transition duration-75 "></i>
-										<span className="ml-3">Setting</span>
-									</a>
-								</li>
-							</ul>
+				},
+				{
+					name: 'Add',
+					icons: '',
+					url: '/articles/add',
+
+				}
+			],
+		},
+		{
+			id: 4,
+			name: 'Menu',
+			icon: '',
+			dropdownmenu: [],
+		},
+	];
+
+	const router = useRouter();
+	const pathNamev = usePathname();
+	const [openDropdownId, setOpenDropdownId] = useState(null);
+	// const [activeMenu, setActiveMenu] = useState(null);
+
+	const handleDropdownToggle = (id) => {
+		setOpenDropdownId(openDropdownId === id ? null : id);
+	};
+	// Set active menu based on current route on page load
+	console.log(usePathname(), "routerrouter.pathname")
+	useEffect(() => {
+		// const currentRoute =router.pathName;
+
+		Dashboardmenu.forEach((menu) => {
+			menu.dropdownmenu.forEach((item) => {
+				if (item.url === pathNamev) {
+					console.log("fgfdgfgdfgd")
+					setOpenDropdownId(menu.id);
+				}
+			});
+		});
+	}, [(usePathname())]);
+
+	// const router = useRouter();
+	const pathName = usePathname();
+
+	// style
+	const [isClassAdded, setIsClassAdded] = useState(false)
+	const [isdropdownclassadd, setisdropdownclassadd] = useState(false)
+	const ref = useRef(null);
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+		  if (ref.current && !ref.current.contains(event.target)) {
+			setIsClassAdded(false); // Set the class to false when clicking outside the div
+		  }
+		};
+	
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+		  document.removeEventListener('mousedown', handleClickOutside);
+		  
+		};
+	  }, []);
+
+	  const opensidedropdown =()=>{
+		setisdropdownclassadd(!isdropdownclassadd)
+	  }
+	const handleClickevent = () => {
+		if(isClassAdded)
+		{
+			  opensidedropdown();
+		}
+		setIsClassAdded(!isClassAdded);
+		
+	  };
+	  
+	return (
+		<>
+
+			
+				<aside ref={ref} id="sidebar" className={`sidebar break-point-sm has-bg-image ${isClassAdded ? 'collapsed' : ''}`}>
+					<a id="btn-collapse" className="sidebar-collapser" onClick={handleClickevent}>
+				      	<i className="fa fa-angle-left"></i>
+					</a>
+					{/* <div className="image-wrapper">
+						<img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+					</div> */}
+					<div className="sidebar-layout">
+						<div className="sidebar-header">
+							<div className="pro-sidebar-logo">
+								<div>L</div>
+								<h5>LOGO</h5>
+							</div>
 						</div>
-						{/* bottom sidebar icons */}
-						{/* <div class="bottom-siderbar-icons hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white z-20">
+						<div className="sidebar-content">
+							<nav className="menu open-current-submenu">
+								<ul>
+									<li className="menu-header"><span> GENERAL </span></li>
+									
+									<>
+									{Dashboardmenu.map((menu) => (
+									<li key={menu.id} className={`menu-item sub-menu ${openDropdownId === menu.id ? 'open' : 'close'}`}  onClick={() => handleDropdownToggle(menu.id)}>
+										<a onClick={opensidedropdown}>
+											<span className="menu-icon" >
+												<i className="fa fa-diamond"></i>
+											</span>
+											<span className="menu-title">{menu.name}</span>
+											<span className="menu-suffix">
+												<span className="badge primary">Hot</span>
+											</span>
+										</a>
+										<div className={`sub-menu-list ${openDropdownId === menu.id || isdropdownclassadd ? 'sidebardropdown' : 'containerStyle'} `} style={{display:openDropdownId === menu.id ? 'block' : 'none' , }}>
+										{openDropdownId === menu.id && (
+											<ul>
+											{menu.dropdownmenu.map((item, index) => (
+												<li key={index} className="menu-item ">
+												<Link href={item.url}>
+														<span className={`menu-title ${openDropdownId === menu.id ? 'colorchange' : ''}`}>{item.name}</span>
+												</Link>
+												</li>
+												))}
+											</ul>
+											)}
+										</div>
+									</li>
+									))}
+									</>
+									
+									
+									<li className="menu-header" style={{ paddingTop: '20px' }}><span> EXTRA </span></li>
+									<li className="menu-item">
+										<a href="#">
+											<span className="menu-icon">
+												<i className="ri-book-2-fill"></i>
+											</span>
+											<span className="menu-title">Documentation</span>
+											<span className="menu-suffix">
+												<span className="badge secondary">Beta</span>
+											</span>
+										</a>
+									</li>
+									<li className="menu-item">
+										<a href="#">
+											<span className="menu-icon">
+												<i className="ri-calendar-fill"></i>
+											</span>
+											<span className="menu-title">Calendar</span>
+										</a>
+									</li>
+									
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+				</aside>
+
+		
+			{/* bottom sidebar icons */}
+			{/* <div class="bottom-siderbar-icons hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white z-20">
 							<a href="setting.html" data-tooltip-target="tooltip-settings" class="inline-flex w-9 h-9 justify-center items-center ">
 								<i class="fa fa-solid fa fa-gear text-md"></i>
 							</a>
@@ -95,9 +273,12 @@ const SidebarMenu =() =>{
 								<div class="tooltip-arrow" data-popper-arrow></div>
 							</div>
 						</div> */}
-					</aside>
-        </>
-    );
+
+
+
+
+		</>
+	);
 }
 
 export default SidebarMenu;

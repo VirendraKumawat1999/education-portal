@@ -1,215 +1,88 @@
-.dashboard-sidebar {
-    width: 100% !important;
-    min-width: 248px !important;
-    border-right: 1px solid #dee0e1;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
-}
-.dashboard-sidebar ul li a i {
-    color: #ff693d;
-    font-size: 18px;
-}
-.dashboard-siderbar-icon button i{
-    background-color: #ff693d4a;
-    color: #ff693d;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 10px;
-}
-.dashboard-siderbar-icon button .setting{
-    padding: 9px;
-    border-radius: 10px;
-    font-size: 13px;
-}
-.dashboard-siderbar-icon .number{
-    background: #ff693d;
-    height: 17px;
-    width: 17px;
-    color: white;
-}
-.dashboard-siderbar-icon .animate-ping{
-    background: #ff693d;
-    width: 20px;
-    height: 20px;
 
-}
-.bottom-siderbar-icons a i{
-    background-color: #ff693d4a;
-    color: #ff693d;
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .Heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .Heading h1{
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  .jobsSection input[type=text], select, textarea, input[type=email] {
+    width: 100%;
     padding: 12px;
-    font-size: 17px;
-    border-radius: 10px;
-}
-.bottom-siderbar-icons .tooltip{
-    background: #ff693d;
-    border-radius: 18px;
-    font-size: 16px;
-    font-family: Poppins;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background: transparent;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+  }
+  
+  .jobsSection label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .jobsSection button{
+    background-color:  #ff810087;
+
     color: white;
-}
-.bottom-siderbar-icons .tooltip .tooltip-arrow{
-    content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: #ff693d transparent transparent transparent;
-}
-.dashboard-sidebar ul li a span {
-    font-size: 16px;
-    font-family: Poppins;
-    font-weight: 500;
-    /* padding-left: 13px; */
-}
-.dashboard-sidebar ul li {
-    margin-bottom: 11px;
-    margin-top: 11px;
-}
-.dashboard-sidebar ul .active{
-    background-color: #ff693d;
-    border-radius: 15px;   
-}
-.dashboard-sidebar ul .active a span{
-    font-size: 18px;
-}
-.dashboard-sidebar ul .active a i {
-    color: white;
-    font-size: 20px;
-} 
-
-
-.dashboard-sidebar ul li:hover{
-    background-color: #ff693d;
-    border-radius: 15px;
-}
-.dashboard-sidebar ul li:hover a  span{
-    font-size: 18px;
-}
-.dashboard-sidebar ul li:hover a i {
-    color: white;
-    font-size: 20px;
-} 
-.antialiased nav{
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.06) !important;
-    border-bottom: 1px solid #dee0e1;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.antialiased h4{
-    font-family: Poppins;
-}
-.antialiased .logo {
-    margin-left: 14px;
-}
-
-
-
-/*  Slider images */
-.form-heading{
-    font-size: 29px;
-    text-align: center;
-    font-family: 'Poppins';
-    font-weight: 600;
-    padding-bottom: 50px;
-}
-
-.upload-files-container {
-	width: 500px;
-    padding: 30px 60px;
-    border-radius: 40px;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.drag-file-area {
-	border: 2px dashed #ff693d;
-    border-radius: 40px;
-    margin: 10px 0 15px;
-    padding: 30px 50px;
-    width: 350px;
-    text-align: center;
-}
-.drag-file-area .upload-icon {
-	font-size: 50px;
-}
-
-.drag-file-area label .browse-files-text {
-	color: #ff693d;
-	font-weight: bolder;
-	cursor: pointer;
-}
-.browse-files span {
-	position: relative;
-	top: -25px;
-}
-.default-file-input {
-	opacity: 0;
-}
-.cannot-upload-message {
-	background-color: #ffc6c4;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    float: right;
+  }
+  
+  .jobsSection button:hover {
+    background-color: #ff8100;
+  }
+  
+  .container {
     border-radius: 5px;
-    color: #BB0000;
-    /* display: none; */
-    justify-content: space-around;
-    padding-left: 18px;
-    padding-right: 17px;
-}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.cannot-upload-message span:last-child {
-	cursor: pointer;
-}
-.upload-button {
-	font-family: 'Poppins';
-	background-color: #ff693d;
-	color: #f7fff7;
-	font-size: 18px;
-	border: none;
-	border-radius: 20px;
-	margin: 10px;
-	padding: 7.5px 50px;
-	cursor: pointer;
-}
-
-/*  Slider end */
-
-
-
-
-/*  Popular courses form star */
-
-.Popularcourse form {
-
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
-    margin-left: 50px;
+  }
+  
+  .jobsSection .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .jobsSection .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .jobsSection .row {
+    margin-bottom: 10px;
 }
- .Popularcourse form .field-name{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.Popularcourse form .field-name label {
-    padding-right: 30px;
-}
-.Popularcourse form .field-name input{
-    border: 1px solid #c5c9cb;
-    padding: 7px 1px 7px 15px;
-    width: 80%;
-    border-radius: 12px;
-    font-size: 17px;
-    font-family: 'Poppins';
-    font-weight: 100;
-    color: #4a4c4e;
-}
-
-/*  Popular courses end */
-
+  .jobsSection .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
