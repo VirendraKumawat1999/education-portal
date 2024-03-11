@@ -5,37 +5,25 @@ import SidebarMenu from '../SidebarMenu/sidebarmenu'
 import { usePathname} from "next/navigation";
 import "../../css/sidebar.scss"
 
-
-// Define the type for the props
-
-interface DashboardProps {
-    children: React.ReactNode; // Specify the type for children prop
-}
-
-const Dashboard: React.FC<DashboardProps> = ({children}) => {
-	const PathName=usePathname();
+const  Dashboard = ({children}) => {
+    const PathName=usePathname();
 
     return (
-		<>
-		
-		<div className="layout has-sidebar fixed-sidebar fixed-header" style={{display: 'grid',gridTemplateColumns:' 1fr 5fr',height:'100%'}}>
-						<SidebarMenu/>
-						{  (PathName === '/dashboard')
-						?
-							<h1 >Welcome to the Dashboard</h1> : 
-							
-							<main>{children}</main>	
-						}
-					
-						{/* style={{    background: '#dee2ec80'}} */}
-				</div>
-		
-
-
-
-			
-		</>
-	);
+        <>
+            <div className="layout has-sidebar fixed-sidebar fixed-header" style={{display: 'grid',gridTemplateColumns:' 1fr 5fr',height:'100%'}}>
+                <SidebarMenu/>
+                {  (PathName === '/dashboard')
+                ?
+                    <h1 >Welcome to the Dashboard</h1> : 
+                    
+                    <main>{children}</main>	
+                }
+                
+                {/* style={{    background: '#dee2ec80'}} */}
+            </div>
+        </>
+    );
 }
+
 
 export default Dashboard ;
