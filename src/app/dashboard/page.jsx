@@ -22,6 +22,7 @@ const  Dashboard = ({children}) => {
                 {/* style={{    background: '#dee2ec80'}} */}
             </div>
         </>
+        
     );
 }
 
