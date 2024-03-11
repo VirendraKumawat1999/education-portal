@@ -5,9 +5,6 @@ import SidebarMenu from '../SidebarMenu/sidebarmenu'
 import { usePathname} from "next/navigation";
 import "../../css/sidebar.scss"
 
-
-
-
 const  Dashboard = ({children}) => {
     const PathName=usePathname();
 
