@@ -5,6 +5,9 @@ import SidebarMenu from '../SidebarMenu/sidebarmenu'
 import { usePathname} from "next/navigation";
 import "../../css/sidebar.scss"
 
+
+
+
 const  Dashboard = ({children}) => {
     const PathName=usePathname();
 
@@ -22,7 +25,7 @@ const  Dashboard = ({children}) => {
                 {/* style={{    background: '#dee2ec80'}} */}
             </div>
         </>
-        
+
     );
 }
 
