@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
